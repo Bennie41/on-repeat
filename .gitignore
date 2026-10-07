@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+.streamlit/secrets.toml
+*.json
+*.duckdb*
+*.log
+SpotifyData/
+data/
