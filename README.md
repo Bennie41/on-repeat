@@ -1,3 +1,21 @@
+# Versie 2 — ontwikkeling
+
+Deze branch is de aparte ontwikkelversie van On Repeat. De bestaande online website blijft versie 1 gebruiken via de branch `main`.
+
+- Versie 1: https://on-repeat-82h5pwvyekzczyofxdj7vy.streamlit.app/
+- Ontwikkelbranch: `version-2`
+- Lokale preview: http://127.0.0.1:8503
+
+Start vanuit deze map met de bestaande Python-omgeving:
+
+```bash
+../.venv/bin/python -m streamlit run app.py --server.address 127.0.0.1 --server.port 8503
+```
+
+Wijzigingen hier publiceren we uitsluitend op `version-2`. Versie 1 wordt pas vervangen als de gebruiker dit expliciet vraagt. Voor een aparte online v2-preview kan later een tweede Streamlit-app aan `version-2` worden gekoppeld.
+
+---
+
 # On Repeat — deelbare Spotify-analyse
 
 Een Streamlit-dashboard voor vrienden die hun **eigen** uitgebreide Spotify-streaminggeschiedenis willen analyseren. Iedere browsersessie begint leeg. Dit project bevat geen luistergegevens.

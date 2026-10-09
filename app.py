@@ -9,7 +9,7 @@ import streamlit as st
 from session_data import SessionLibrary
 import uuid
 
-st.set_page_config(page_title="On Repeat · jouw luisterwereld", page_icon="🎧", layout="wide")
+st.set_page_config(page_title="On Repeat v2 · testversie", page_icon="🎧", layout="wide")
 st.markdown("""<style>
 .block-container {max-width:1500px;padding-top:2.2rem;padding-bottom:3rem}
 [data-testid="stSidebar"] {border-right:1px solid #2b322d}
@@ -81,7 +81,7 @@ with st.sidebar:
     if library.records or library.imports:
         st.button("Mijn sessie wissen", on_click=reset_session, width="stretch")
 
-st.markdown('<div class="hero"><div class="eyebrow">YOUR PERSONAL LISTENING ROOM</div><h1>On Repeat<span style="color:#1ed760">.</span></h1><p>Ontdek de nummers die blijven hangen. En de patronen erachter.</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="hero"><div class="eyebrow">VERSIE 2 · TESTOMGEVING</div><h1>On Repeat<span style="color:#1ed760">.</span></h1><p>Ontdek de nummers die blijven hangen. En de patronen erachter.</p></div>', unsafe_allow_html=True)
 
 with st.expander("Jouw Spotify-bestanden toevoegen", expanded=df.empty):
     st.write("Upload de JSON-bestanden uit je uitgebreide Spotify-streaminggeschiedenis. Meerdere bestanden worden samengevoegd; exacte duplicaten tellen één keer mee.")
